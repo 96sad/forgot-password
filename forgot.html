@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forgot.css">
+</head>
+<body>
+    <div class="container">
+        <h5>Change Password</h5>
+        <form action="/">
+            New Password
+            <input type="password" name="password" id="password" required oninvalid="this.setCustomValidity('New Password')" oninput="this.setCustomValidity('')">
+
+            Confirm Password
+            <input type="password" name="confirmPassword" id="confirmPassword" required oninvalid="this.setCustomValidity('Confirm Password')" oninput="this.setCustomValidity('')">
+
+            <button class="btn" id="change">Reset Password</button>
+        </form>
+    </div>
+</body>
+</html>
